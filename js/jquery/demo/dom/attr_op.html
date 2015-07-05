@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../../lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//获取属性值
+				alert($("a").attr("href"));
+				//设置属性值
+				$("#p2").attr("hidden", "true");
+				//移出属性值
+				$("#p1").removeAttr("hidden");
+			});
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<a href="www.baidu.com">baidu</a><br>
+		<p id="p2">xujianguo</p>
+		<p hidden="true" id="p1">gdut</p>
+	</body>
+</html>

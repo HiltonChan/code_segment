@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../../lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			/*
+				基本选择器的使用
+			*/
+			$(function() {
+				//通过ID匹配元素
+				$("#div1").css("font-size", "10px");
+				//通过CLASS匹配元素
+				$(".div2").css("font-size", "30px");
+				//通过元素名匹配元素
+				$("div span").css("font-size", "50px");
+				//匹配符合的所有元素
+				$("div div *").css("font-size", "70px");
+				//合并匹配元素
+				$("#p1, button").css("font-size", "90px");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1">div1</div>
+		<div class="div2">div2</div>
+		<div>
+			<span>div span</span>		
+		</div>
+		<div>
+			<div>
+				<a>a</a></br>
+				<span>div span2</span>		
+			</div>
+		</div>
+		<p id="p1">p1</p>
+		<button>button1</button>
+	</body>
+</html>

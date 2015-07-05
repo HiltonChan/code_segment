@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.c1 {
+				font-size: 50px;
+			}
+			.c2 {
+				font-size: 100px;
+			}
+		</style>
+		<script type="text/javascript" src="../../lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#p1").click(function() {
+					if($(this).attr("class") == "c1") {
+						//移出样式
+						$(this).removeClass("c1");	
+					} else {
+						//添加样式
+						$(this).addClass("c1");						
+					}
+				});
+				$("#p2").dblclick(function() {
+					//切换样式
+					$(this).toggleClass("c2");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p id="p1">xujianguo</p>
+		<p id="p2" class="c1">gdut</p>
+	</body>
+</html>

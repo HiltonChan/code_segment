@@ -1,0 +1,4 @@
+CREATE TABLE USER (
+  name VARCHAR(20) PRIMARY KEY,
+  password VARCHAR(20)
+)

@@ -112,4 +112,9 @@ set session binlog_format ='row';
 set session binlog_format ='mixed';
 </code></pre>
 
+**应用场景**<br>
+**Statement模式**：对于很大日志量的数据库的时候，若采用Row模式，会导致日志膨胀，传输时间也会变长，这是采用Statement模式适合。<br>
+**Row模式**：若存在SQL是跨库操作的，会导致库之间的数据不一致，使用Row模式可以避免执行SQL，从记录的角度去保证一致性。<br>
+**Mixed模式**:一般都采用这个模式，但是对于上述两种特别的情况，需要去选择一种。<br>
+
 

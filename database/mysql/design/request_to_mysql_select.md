@@ -20,5 +20,5 @@
 ##### 处理数记录 #####
 记录每个数据库当前未完成的请求数
 ##### 最优选择 #####
-按照公式select = 1/(time*number)计算出对应MySQL库的select值，time是SQL平局执行时间，时间越小，select越大，number是处理数，number越大,select越小，所有time越小，number越小，会产生一个最大的select值，这个select值对应的MySQL库就是我们的最佳选择。
+按照公式select = 1/(time*number)计算出对应MySQL库的select值，time是SQL平局执行时间，时间越小，select越大，number是处理数，number越大,select越小，所以time越小，number越小，会产生一个最大的select值，这个select值对应的MySQL库就是我们的最佳选择。
 

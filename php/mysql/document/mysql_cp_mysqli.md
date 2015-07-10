@@ -71,3 +71,71 @@
 	    print_r($value);
 	}
 	$link = null;
+
+### 三种方式的比较 ###
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>mysql</th>
+      <th>mysqli</th>
+      <th>pdo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>prepare语句的支持</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>存储过程的支持</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>多语句执行的支持</td>
+      <td>否</td>
+      <td>是</td>
+      <td>大多数</td>
+    </tr>
+	<tr>
+      <td>MySQL4.1以上功能的支持</td>
+      <td>否</td>
+      <td>是</td>
+      <td>大多数</td>
+    </tr>
+	<tr>
+      <td>是否面向对象</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>支持持久连接</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>事务的支持</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>API对字符集的支持</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+	<tr>
+      <td>推荐</td>
+      <td>候选</td>
+      <td>首选</td>
+      <td>次选</td>
+    </tr>
+  </tbody>
+</table>

@@ -53,4 +53,21 @@
 	//关闭资源
 	$result->free();
 	$link->close();
-
+**pdo的连接**
+<!-- lang: -->
+	<?php
+	/**
+	 * User: xujianguo
+	 * Mail: xujianguo@4399.com
+	 * Date: 2015/7/10
+	 * Time: 11:42
+	 */
+	//连接数据库
+	$link = new PDO('mysql:host=192.168.137.222;dbname=php_db', 'root', 'xujianguo');
+	//查询
+	$result = $link->query('select * from test');
+	//迭代结果
+	foreach($result as $value) {
+	    print_r($value);
+	}
+	$link = null;
